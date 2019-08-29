@@ -6,77 +6,28 @@ namespace Gruel.Audio {
 	public class SfxData : ScriptableObject {
 
 #region Properties
-		public AudioClip AudioClip {
-			get => _audioClip;
-		}
-		
-		public float Volume {
-			get => _volume;
-		}
+		public AudioClip AudioClip => _audioClip;
+		public float Volume => _volume;
+		public float Pitch => _pitch;
+		public bool Loop => _loop;
+		public int MaxSources => _sourcesMax;
+		public AudioMixerGroup AudioMixerGroup => _mixerGroup;
 
-		public float Pitch {
-			get => _pitch;
-		}
+		public bool VolumeLerpEnabled => _volumeLerpEnabled;
+		public float VolumeEnd => _volumeEnd;
+		public float VolumeLerpTime => _volumeLerpTime;
 
-		public bool Loop {
-			get => _loop;
-		}
+		public bool VolumeRndEnabled => _volumeRndEnabled;
+		public float VolumeRndMin => _volumeRndMin;
+		public float VolumeRndMax => _volumeRndMax;
 
-		public int MaxSources {
-			get => _sourcesMax;
-		}
+		public bool PitchLerpEnabled => _pitchLerpEnabled;
+		public float PitchEnd => _pitchEnd;
+		public float PitchLerpTime => _pitchLerpTime;
 
-		public AudioMixerGroup AudioMixerGroup {
-			get => _mixerGroup;
-		}
-
-		public bool VolumeLerpEnabled {
-			get => _volumeLerpEnabled;
-		}
-
-		public float VolumeEnd {
-			get => _volumeEnd;
-		}
-
-		public float VolumeLerpTime {
-			get => _volumeLerpTime;
-		}
-
-		public bool VolumeRndEnabled {
-			get => _volumeRndEnabled;
-		}
-
-		public float VolumeRndMin {
-			get => _volumeRndMin;
-		}
-
-		public float VolumeRndMax {
-			get => _volumeRndMax;
-		}
-
-		public bool PitchLerpEnabled {
-			get => _pitchLerpEnabled;
-		}
-
-		public float PitchEnd {
-			get => _pitchEnd;
-		}
-
-		public float PitchLerpTime {
-			get => _pitchLerpTime;
-		}
-
-		public bool PitchRndEnabled {
-			get => _pitchRndEnabled;
-		}
-
-		public float PitchRndMin {
-			get => _pitchRndMin;
-		}
-
-		public float PitchRndMax {
-			get => _pitchRndMax;
-		}
+		public bool PitchRndEnabled => _pitchRndEnabled;
+		public float PitchRndMin => _pitchRndMin;
+		public float PitchRndMax => _pitchRndMax;
 #endregion Properties
 
 #region Fields
